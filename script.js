@@ -55,6 +55,8 @@ let progressBar = document.getElementById('progress-bar');
 let restartBtn = document.getElementById('restart-btn');
 let gardenStage= document.getElementById('garden-stage')
 
+let question = document.querySelector(".question");
+
 let flowercounter = document.getElementById('flowers');
 let message = document.getElementById('message');
 
@@ -116,6 +118,8 @@ function checkAnswer(selectedAnswer, button) {
     word.style.fontSize = "2rem";
 
     pinyin.textContent = "";
+
+    question.style.display = "none";
 
     let endTime = Date.now();
     let seconds = Math.floor((endTime - startTime)/ 1000);
@@ -250,6 +254,12 @@ restartBtn.addEventListener("click", function () {
     speakBtn.style.display = "block";
 
     restartBtn.style.display = "none";
+
+    question.style.display = "block";
+
+    word.textContent = "";
+    pinyin.textContent = "";
+    word.style.fontSize = "5rem";
 
     startTime = Date.now();
 
