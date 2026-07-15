@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f7f5f2;
+
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+    color: #2c2c2c;
+}
+
+.container {
+    width: 550px;
+
+    background-color: white;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e5e0d8;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+    text-align: center;
+}
+
+.title {
+    font-size: 0.9rem;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #8a8a8a;
+
+    margin-bottom: 50px;
+}
+
+#word {
+    font-size: 5rem;
+
+    font-family: Georgia, serif;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+#pinyin {
+    font-size: 1.1rem;
+
+    color: #7a7a7a;
+
+    margin-bottom: 35px;
+}
+
+.question {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+button {
+    width: 100%;
+
+    height: 58px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #d9d3ca;
+
+    border-radius: 14px;
+
+    background: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #f2eee8;
+
+    transform: translateY(-2px);
+}
+
+#flowers {
+    margin-top: 25px;
+
+    color: #666;
+}
+
+#message {
+    margin-top: 10px;
+
+    color: #444;
+}
+
+.progress-container{
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#7aa874;
+    transition:0.4s;
+}
+
+.correct{
+    background:#dfe9dc;
+    border-color:#8aa37b;
+}
+
+.wrong{
+    background:#efe1de;
+    border-color:#b37b7b;
+}
+
+#garden-stage{
+    margin-top:15px;
+    font-weight:bold;
+    color:#5c7a4f;
+}
+
+#restart-btn{
+    display:none;
+    margin-top:20px;
+}
+
+@media (max-width: 600px) {
+
+    .container{
+        width:90%;
+        padding:25px;
+    }
+
+    #word{
+        font-size:3rem;
+    }
+
+    button{
+        height:50px;
+        font-size:0.9rem;
+    }
+
+    .title{
+        font-size:0.8rem;
+    }
+
+}
+
+#speak-btn {
+    background-color: #7aa874;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+#speak-btn:hover {
+    background-color: #688f63;
+    transform: translateY(-2px);
+}
+
+#speak-btn:active {
+    transform: scale(0.98);
+}
+
+#speak-btn {
+    width: 60%;
+    height: 45px;
+    margin: 0 auto 20px auto;
+    display: block;
+
+    background-color: #7aa874;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
